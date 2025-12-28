@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="cs.css">
+</head>
+<body class="gym">
+
+    <div class="container">
+
+        <div class="tabs">
+            <div class="tab active" id="loginTab">Login</div>
+            <div class="tab" id="signupTab">Sign Up</div>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <div id="loginForm">
+            <div class="input-group">
+                <label>Email</label>
+                <input type="text" id="loginEmail">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="loginPassword">
+            </div>
+            <button id="loginBtn">Login</button>
+        </div>
+
+        <!-- SIGNUP FORM -->
+        <div id="signupForm" class="hidden">
+            <div class="input-group">
+                <label>First Name</label>
+                <input type="text" id="firstName">
+            </div>
+            <div class="input-group">
+                <label>Last Name</label>
+                <input type="text" id="lastName">
+            </div>
+            <div class="input-group">
+                <label>Age</label>
+                <input type="text" id="age">
+                <p class="error" id="ageError"></p>
+            </div>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="text" id="email">
+                <p class="error" id="emailError"></p>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password">
+            </div>
+            <button id="signupBtn">Sign Up</button>
+        </div>
+
+    </div>
+
+    <!-- Link external JS -->
+    <script src="login.js"></script>
+</body>
+</html>

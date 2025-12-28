@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Workout Planner</title>
+
+    <link rel="stylesheet" href="styles3.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="icon">🏋️‍♂️</span>
+                <h1>Cyberpump</h1>
+            </div>
+    
+            <ul class="nav-links">
+                <li><a href="ht.html">Home</a></li>
+                <li><a href="gyms.html">Find Gyms</a></li>
+                <li><a href="work2.html">Workout Planner</a></li>
+                <li><a href="calories.html">Calorie Counter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Wrapper -->
+    <main class="main-wrapper">
+        <div class="content-box">
+
+            <!-- Title -->
+            <section class="title-section">
+                <h1 class="main-title">Weekly Workout Planner</h1>
+                <p class="description">
+                    Create and customize your weekly workout routine. Choose from pre-made templates or build your own plan.
+                </p>
+            </section>
+
+            <!-- Summary Cards -->
+            <section class="summary-grid">
+
+                <div class="summary-card blue-card">
+                    <p class="summary-number" id="total-exercises">36</p>
+                    <p class="summary-label">Total Exercises</p>
+                </div>
+
+                <div class="summary-card green-card">
+                    <p class="summary-number" id="active-days">5</p>
+                    <p class="summary-label">Active Days</p>
+                </div>
+
+                <div class="summary-card orange-card">
+                    <p class="summary-number" id="rest-days">2</p>
+                    <p class="summary-label">Rest Day</p>
+                </div>
+
+            </section>
+
+            <!-- Planner Body -->
+            <section class="planner-grid">
+
+                <!-- Day Tabs -->
+                <aside class="day-tab-container">
+                    <ul id="day-tabs">
+                        <li data-day="Saturday" class="day-btn active-day">Saturday</li>
+                        <li data-day="Sunday" class="day-btn">Sunday</li>
+                        <li data-day="Monday" class="day-btn">Monday</li>
+                        <li data-day="Tuesday" class="disabled-day">Tuesday <span class="rest">rest</span></li>
+                        <li data-day="Wednesday" class="day-btn">Wednesday</li>
+                        <li data-day="Thursday" class="day-btn">Thursday</li>
+                        <li data-day="Friday" class="disabled-day">Friday <span class="rest">rest</span></li>
+                    </ul>
+                </aside>
+
+                <!-- Exercise List -->
+                <section class="exercise-box">
+                    <div class="exercise-header">
+                        <h3 id="current-day-title">Saturday's Workout</h3>
+                        <button id="add-exercise-btn" class="add-btn">+ Add Exercise</button>
+                    </div>
+
+                    <div id="exercise-list-container"></div>
+                </section>
+
+            </section>
+
+        </div>
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,511 @@
+﻿/* Global Reset & Typography */
+* {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111; /* dark gym vibe */
+    color: #eee;
+}
+/* ==================== Login & Signup Page ==================== */
+.gym {
+    /* Hero / Welcome Section with Background Image */
+
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 50px 80px 50px;
+    text-align: center;
+    /* 🔽 BACKGROUND IMAGE PLACE */
+    background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url("017b3659-5c93-49af-a709-fa74764a5760.jpeg"); /* ← put your image path here */
+
+    background-size: cover; /* fill the section */
+    background-position: center; /* center image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* optional parallax effect */
+}
+
+.container {
+    margin-top: 140px;
+    background: #1a1a1a; /* dark card background */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    width: 550px;
+    margin: 50px auto;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background: #222;
+    border-radius: 10px;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    cursor: pointer;
+    color: #eee;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+    .tab.active {
+        background: #f44336;
+        color: #fff;
+    }
+
+    .tab:hover {
+        background: #d32f2f;
+        color: #fff;
+    }
+
+/* Forms */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .input-group label {
+        margin-bottom: 6px;
+        color: #ccc;
+        font-weight: 600;
+    }
+
+    .input-group input {
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid #333;
+        background: #222;
+        color: #eee;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #f44336;
+            box-shadow: 0 0 8px rgba(244,67,54,0.5);
+        }
+
+/* Buttons */
+.container button {
+    width: 100%;
+    padding: 14px;
+    background: #f44336;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+    .container button:hover {
+        background: #d32f2f;
+        transform: scale(1.03);
+    }
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Error messages */
+.error {
+    color: #ff6b6b;
+    font-size: 13px;
+    margin-top: 4px;
+    min-height: 16px;
+}
+
+/* Responsive for small screens */
+@media(max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+
+/* Header / Navbar */
+header {
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    justify-content: space-between;
+    padding: 15px 100px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+
+    header h1 {
+        font-size: 28px;
+        color: #f44336; /* gym red accent */
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+nav a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 30px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+    nav a:hover {
+        color: #fff;
+        background-color: #f44336;
+    }
+
+/* Hero / Welcome Section */
+.b {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    padding: 140px 50px 80px 50px;
+    text-align: center;
+    /* 🔽 BACKGROUND IMAGE PLACE */
+    background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url("54fdec82-659d-4c84-88a7-41a98c63bfd2.jpeg"); /* ← put your image path here */
+
+    background-size: cover; /* fill the section */
+    background-position: center; /* center image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+    .b h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #f44336;
+    }
+
+    .b h4 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+    .b p {
+        font-size: 18px;
+        max-width: 700px;
+        margin: 0 auto 30px auto;
+        color: #ccc;
+    }
+
+#butcolor {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 14px 35px;
+    border-radius: 50px;
+    background-color: #f44336;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+    #butcolor:hover {
+        background-color: #d32f2f;
+        transform: scale(1.05);
+    }
+
+/* Section Titles */
+.title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #f44336;
+    text-transform: uppercase;
+}
+
+/* About Us Section */
+/* About Us Section */
+/* About Us Section */
+.c {
+    position: relative;
+    min-height: 70vh;
+    padding: 80px 50px;
+    margin: 50px;
+    border-radius: 20px;
+    overflow: hidden; /* ⬅️ image is CONTAINED inside section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #eee;
+}
+
+    /* Section image acts like a cover */
+    .c img {
+        position: absolute;
+        inset: 0; /* top:0 right:0 bottom:0 left:0 */
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* fills section without distortion */
+        z-index: 0;
+    }
+
+    /* Dark overlay */
+    .c::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+
+    /* Content above image */
+    .c h2,
+    .c h4,
+    .c p {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Text styling */
+    .c h4 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #f44336;
+        text-transform: uppercase;
+    }
+
+    .c p {
+        font-size: 18px;
+        max-width: 750px;
+        color: #ddd;
+    }
+
+/* Services Section */
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: #222;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    border-radius: 20px;
+    padding: 30px;
+    flex-basis: 300px;
+    transition: all 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+    }
+
+    .card .icon {
+        font-size: 30px;
+        color: #f44336;
+        margin-bottom: 15px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .card p {
+        font-size: 16px;
+        color: #ccc;
+    }
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 0;
+    background-color: #1a1a1a;
+}
+
+.contact-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #f44336;
+}
+
+.subtitle {
+    width: 100%;
+    margin-bottom: 30px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+    .info-box .icon {
+        font-size: 24px;
+        background: #f44336;
+        padding: 12px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .info-box h4 {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .info-box p {
+        color: #ccc;
+    }
+
+.contact-form {
+    flex: 1;
+    background: #222;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 18px;
+        border: 1px solid #444;
+        border-radius: 8px;
+        font-size: 15px;
+        background: #111;
+        color: #eee;
+    }
+
+    .contact-form button {
+        padding: 16px;
+        background: #f44336;
+        border: none;
+        border-radius: 10px;
+        font-size: 17px;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .contact-form button:hover {
+            background: #d32f2f;
+            transform: scale(1.03);
+        }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header, .b {
+        padding: 15px 50px;
+    }
+
+    .content {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    header, .b {
+        padding: 15px 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .b h1 {
+        font-size: 48px;
+    }
+
+    .b h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .b h1 {
+        font-size: 36px;
+    }
+
+    .b h4 {
+        font-size: 18px;
+    }
+}
+/* Assuming header height ~70px */
+section {
+    scroll-margin-top: 200px; /* offset for fixed header */
+}
+
+.card-link {
+    text-decoration: none; /* remove underline */
+    color: inherit; /* keep card text color */
+    display: block; /* make the entire card clickable */
+}
+
+    .card-link .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+    }

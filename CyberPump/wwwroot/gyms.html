@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Pump - Find Gyms</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="icon">🏋️‍♂️</span>
+                <h1>Cyberpump</h1>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="ht.html">Home</a></li>
+                <li><a href="gyms.html">Find Gyms</a></li>
+                <li><a href="work2.html">Workout Planner</a></li>
+                <li><a href="calories.html">Calorie Counter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="gyms_page">
+        <div class="title">
+            <h2>Find Your Perfect Gym in Egypt</h2>
+            <p>Browse through our selection of premium gyms across Egypt and find the one that fits your needs</p>
+        </div>
+
+        <div id="city_btns">
+            <button class="cities">All</button>
+            <button class="cities">Cairo</button>
+            <button class="cities">Alexandria</button>
+            <button class="cities">Giza</button>
+        </div>
+
+        <div class="card-container">
+            <!-- Gyms will be loaded here from database -->
+        </div>
+
+        <div id="payment" class="popup">
+            <div class="popup-content">
+                <label for="">Card Number</label>
+                <input type="text" id="card-num">
+                <label for="">CVV</label>
+                <input type="text" id="cvv">
+                <div class="cc_btns">
+                    <button id="cancelbtn">Cancel</button>
+                    <button id="paybtn">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

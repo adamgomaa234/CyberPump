@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mains.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>CyberPump</h1>
+        </div>
+        
+        <div class="services">
+            <h3>Main Navigation</h3>
+            <ul>
+                <a href="work2.html"><li>Workout PLanner</li></a>
+                
+                <a href="gyms.html"><li>Find Gym</li></a>
+                
+                <a href="calories.html"><li> Calorie Counter</li></a>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <a href="#">Settings</a>
+            <a href="ht.html">Logout</a>
+        </div>
+    </nav>
+
+    <main>
+        
+        <header>
+            <div class="welcome">
+                <h2>Welcome back, Doma</h2>
+                <p>Here's your progress today.</p>
+            </div>
+            <div class="user-info" id="today-date">
+                <span>Dec 29, 2025</span>
+            </div>
+        </header>
+
+        <section class="stats-grid">
+            <div class="card">
+                <ul><h2>Total Workouts</h2>
+                    <li>Bench Press</li>
+                    <li>Inclined Bench Press</li>
+                    <li>ButterFly</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Gym</h2>
+                <p class="big-number green">FitZone Alexandria</p>
+            </div>
+            <div class="card">
+                <h2>Total Callories</h2>
+                <p class="big-number blue">2500</p>
+            </div>
+        </section>
+
+        <section class="middle-grid">
+            
+            <div class="card chart-container">
+                <div class="card-header">
+                    <h3>Workout Progress</h3>
+                </div>
+                <div class="chart-visual">
+                    <div class="fake-line"></div>
+                </div>
+            </div>
+        
+        </section>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

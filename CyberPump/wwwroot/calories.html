@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="icon">🏋️‍♂️</span>
+                <h1>Cyberpump</h1>
+            </div>
+    
+            <ul class="nav-links">
+                <li><a href="ht.html">Home</a></li>
+                <li><a href="gyms.html">Find Gyms</a></li>
+                <li><a href="work2.html">Workout Planner</a></li>
+                <li><a href="calories.html">Calorie Counter</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div id="calories_page">
+    <div class="title">
+        <h3>Calorie Counter & Meal Planner</h3>
+    <p>Track your daily nutrition and reach your fitness goals with smart meal planning</p>
+</div>
+<div id="meal_btns">
+    <button id="healthy">Healthy Meals</button>
+    <button id="plan">Generate Meal Plan</button>
+</div>
+<div id="date">
+    <input type="date" id="myDate">
+</div>
+</div>
+<div class="page_layout">
+
+    <!-- LEFT: Calorie + Macro Box -->
+    <aside class="calorie_box">
+        <h2>Today's Summary</h2>
+
+        <div class="macro_item">
+            <span>Calories</span>
+            <p id="totalCalories">0 kcal</p>
+        </div>
+
+        <div class="macro_item">
+            <span>Protein</span>
+            <p id="totalProtein">0 g</p>
+        </div>
+
+        <div class="macro_item">
+            <span>Carbs</span>
+            <p id="totalCarbs">0 g</p>
+        </div>
+
+        <div class="macro_item">
+            <span>Fat</span>
+            <p id="totalFat">0 g</p>
+        </div>
+    </aside>
+
+    <!-- RIGHT: Meals -->
+    <section id="meals">
+
+        <div class="meal_Category">
+            <h3 class="meal_title">Breakfast</h3>
+            <span class="meal_status">No foods added yet</span>
+            <button class="meal_btn" data-meal="breakfast">+</button>
+        </div>
+
+        <div class="meal_Category">
+            <h3 class="meal_title">Lunch</h3>
+            <span class="meal_status">No foods added yet</span>
+            <button class="meal_btn" data-meal="lunch">+</button>
+        </div>
+
+        <div class="meal_Category">
+            <h3 class="meal_title">Dinner</h3>
+            <span class="meal_status">No foods added yet</span>
+            <button class="meal_btn" data-meal="dinner">+</button>
+        </div>
+
+    </section>
+
+</div>
+<div id="macros" class="popup">
+    <div class="popup-content">
+        <h2>Add Food</h2>
+
+        <label>Food Name</label>
+        <input type="text" id="foodName">
+
+        <label>Calories (kcal)</label>
+        <input type="number" id="cals">
+
+        <label>Protein (g)</label>
+        <input type="number" id="protein">
+
+        <label>Carbs (g)</label>
+        <input type="number" id="carbs">
+
+        <label>Fats (g)</label>
+        <input type="number" id="fats">
+
+        <button id="saveFood">Add Food</button>
+        <button id="closePopup">Cancel</button>
+    </div>
+</div>
+<!-- Healthy Meals Popup -->
+<div class="healthPopup" id="healthyMealsPopup">
+    <div class="healthPopup-content">
+  
+      <h2>Healthy Meals</h2>
+  
+      <!-- Breakfast Section -->
+      <div class="meal_section" id="breakfast">
+        <h2>Breakfast</h2>
+        <div class="meal">
+          <h3>Greek Yogurt Bowl</h3>
+          <p><span>Calories:</span> 320 kcal</p>
+          <p><span>Macros:</span> Protein 20g • Carbs 40g • Fat 8g</p>
+          <p><span>Ingredients:</span> Greek yogurt, honey, granola, mixed berries</p>
+          <details>
+            <summary>Show Recipe</summary>
+            <p>1. Add 1 cup Greek yogurt to a bowl.<br>
+               2. Top with 1 tbsp honey.<br>
+               3. Add 1/4 cup granola and mixed berries.<br>
+               4. Serve cold.</p>
+          </details>
+          <button class="addTrackerBtn" data-meal-id="breakfast">Add to Tracker</button>
+        </div>
+  
+        <div class="meal">
+          <h3>Oatmeal Power Bowl</h3>
+          <p><span>Calories:</span> 350 kcal</p>
+          <p><span>Macros:</span> Protein 15g • Carbs 55g • Fat 10g</p>
+          <p><span>Ingredients:</span> Oats, banana, peanut butter, chia seeds</p>
+          <details>
+            <summary>Show Recipe</summary>
+            <p>1. Cook 1/2 cup oats in milk or water.<br>
+               2. Add sliced banana on top.<br>
+               3. Add 1 tbsp peanut butter.<br>
+               4. Sprinkle chia seeds.</p>
+          </details>
+          <button class="addTrackerBtn" data-meal-id="breakfast">Add to Tracker</button>
+        </div>
+      </div>
+  
+      <!-- Lunch Section -->
+      <div class="meal_section" id="lunch">
+        <h2>Lunch</h2>
+        <div class="meal">
+          <h3>Grilled Chicken & Rice</h3>
+          <p><span>Calories:</span> 450 kcal</p>
+          <p><span>Macros:</span> Protein 40g • Carbs 50g • Fat 8g</p>
+          <p><span>Ingredients:</span> Chicken breast, rice, salad</p>
+          <details>
+            <summary>Show Recipe</summary>
+            <p>1. Season chicken with salt, pepper, paprika.<br>
+               2. Grill for 6–8 minutes per side.<br>
+               3. Serve with 1 cup cooked rice and salad.</p>
+          </details>
+          <button class="addTrackerBtn" data-meal-id="lunch">Add to Tracker</button>
+        </div>
+      </div>
+  
+      <!-- Dinner Section -->
+      <div class="meal_section" id="dinner">
+        <h2>Dinner</h2>
+        <div class="meal">
+          <h3>Baked Salmon & Potatoes</h3>
+          <p><span>Calories:</span> 500 kcal</p>
+          <p><span>Macros:</span> Protein 35g • Carbs 45g • Fat 20g</p>
+          <p><span>Ingredients:</span> Salmon, potatoes, green beans</p>
+          <details>
+            <summary>Show Recipe</summary>
+            <p>1. Season salmon with lemon, garlic, olive oil.<br>
+               2. Bake at 200°C for 12–15 minutes.<br>
+               3. Bake potatoes separately until soft.<br>
+               4. Steam green beans and serve.</p>
+          </details>
+          <button class="addTrackerBtn" data-meal-id="dinner">Add to Tracker</button>
+        </div>
+      </div>
+  
+      <button id="cancelbtn">Close</button>
+    </div>
+  </div>
+  
+  
+  
+  
+<script src="script_health.js">
+
+</script>
+    </body>
+    
+    </html>
